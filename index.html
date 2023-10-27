@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>MY PORTFOLIO.COM</h1>
+<hr>
+
+<h2>PORTFOLIO</h2>
+<p>SOME OF MY PROJECTS</p>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="p1.jpg" alt="Project Front page" style="width:100%">
+      <h3>Hotel Management Project</h3>
+      <p>It's a Hotel staffs and Guests Register management Project. It's is useful to manage the registration instead of Paper Books</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="p2.webp" alt="Project Front page" style="width:100%">
+      <h3>Library Management Project</h3>
+      <p>In the library it's used for recording the books avalability and stocks. And also for the clients registration. It is efficient for any system including MAC and Linux</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="p3.png" alt="Project Front page" style="width:100%">
+      <h3>Block Chain</h3>
+      <p>A college project for explain and demonstrating the block chain's technology in the cryto currency transaction...</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="p4.webp" alt="Project Front page" style="width:100%">
+      <h3>IOT</h3>
+      <p>Internet of Things(IOT) is implemented in the machine for the wireless and distance less operation. It's so useful for the Farmers and NRI's as well.</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<div class="content">
+  <img src="pl.jpg" alt="Programming Languages" style="width:100%">
+  <h3>KNOWN PROGRAMMING LANGUAGES</h3>
+  <p>The Programming languages is the main bone in developing any app or website, This are the languages known by myself.,</p>
+  <p>PHP, CSS, HTML, HTML5, JAVASCRIPT, JAVA and C++</p>
+</div>
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>
